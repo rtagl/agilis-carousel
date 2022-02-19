@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { StyledCarousel } from './styles/StyledCarousel.styled';
 import { loggedOutImages, loggedInImages } from '../images';
+import CarouselControls from './CarouselControls';
 
 const Carousel = () => {
   const [images, setImages] = useState(loggedOutImages);
@@ -28,17 +29,11 @@ const Carousel = () => {
           />
         </div>
       </div>
-      <div>
-        <button onClick={() => selectedImage}>prev</button>
-        <button
-          onClick={() =>
-            setSelectedImage(
-              (selectedImage + images.length - 1) % images.length
-            )
-          }>
-          next
-        </button>
-      </div>
+      <CarouselControls
+        images={images}
+        selectedImage={selectedImage}
+        setSelectedImage={setSelectedImage}
+      />
     </StyledCarousel>
   );
 };
