@@ -4,7 +4,7 @@ export const StyledCarousel = styled.div`
   background-color: #cfcfcf;
   width: 1150px;
   max-width: 100%;
-  margin: 1.5rem auto;
+  margin: 0 auto;
   border-radius: 5px;
   box-shadow: 8px 5px 5px #064663;
 
