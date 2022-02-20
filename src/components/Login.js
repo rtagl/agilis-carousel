@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [cookies, setCookie, removeCookie] = useCookies(['user']);
+  const [cookies, setCookie] = useCookies(['user']);
   let navigate = useNavigate();
 
   useEffect(() => {

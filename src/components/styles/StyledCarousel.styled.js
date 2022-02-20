@@ -6,7 +6,7 @@ export const StyledCarousel = styled.div`
   max-width: 100%;
   margin: 1.5rem auto;
   border-radius: 5px;
-  box-shadow: 10px 5px 5px #064663;
+  box-shadow: 8px 5px 5px #064663;
 
   .images {
     display: flex;

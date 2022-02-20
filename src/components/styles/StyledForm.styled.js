@@ -9,7 +9,7 @@ export const StyledForm = styled.form`
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  box-shadow: 10px 5px 5px #064663;
+  box-shadow: 8px 5px 5px #064663;
 
   div {
     font-size: 2rem;

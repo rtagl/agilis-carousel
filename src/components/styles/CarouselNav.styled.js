@@ -22,10 +22,10 @@ export const CarouselNav = styled.div`
     height: 10px;
     background-color: #064663;
     border-radius: 50%;
-    margin: 0.5em;
+    margin: 0.4em;
   }
 
   .selected {
-    background-color: #ecb365;
+    background-color: #e31c9d;
   }
 `;

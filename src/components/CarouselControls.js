@@ -46,8 +46,8 @@ const CarouselControls = ({ images, selectedImage, setSelectedImage }) => {
             width="16"
             height="16"
             stroke="#ecb365"
-            strokeWidth="2"
             fill="none"
+            strokeWidth="3"
             strokeLinecap="round"
             strokeLinejoin="round">
             <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -69,7 +69,7 @@ const CarouselControls = ({ images, selectedImage, setSelectedImage }) => {
             width="16"
             height="16"
             stroke="#ecb365"
-            strokeWidth="2"
+            strokeWidth="3"
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round">
