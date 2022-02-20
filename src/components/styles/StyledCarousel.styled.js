@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 export const StyledCarousel = styled.div`
-  background-color: #041c32;
+  background-color: #cfcfcf;
   width: 1150px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 1.5rem auto;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px #064663;
 
   .images {
     display: flex;
@@ -29,6 +31,8 @@ export const StyledCarousel = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    box-shadow: 4px 2px 2px #064663;
+    border-radius: 5px;
   }
 
   .card:hover {

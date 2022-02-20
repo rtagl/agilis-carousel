@@ -9,9 +9,15 @@ export const Button = styled.button`
   color: #ecb365;
   display: flex;
   justify-content: center;
+  letter-spacing: 1px;
+  font-weight: 700;
 
   &:hover {
     background-color: #ecb365;
     color: #064663;
+
+    svg {
+      stroke: #064663;
+    }
   }
 `;

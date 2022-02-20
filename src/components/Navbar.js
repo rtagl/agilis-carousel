@@ -12,8 +12,9 @@ const Navbar = () => {
 
   return (
     <StyledNavbar>
+      {/* Display login / logout button based on user status */}
       {!cookies['user'] ? (
-        <Link to="/login">
+        <Link to="/login" style={{ textDecoration: 'none' }}>
           <Button>Login</Button>
         </Link>
       ) : (

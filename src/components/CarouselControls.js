@@ -6,6 +6,8 @@ const CarouselControls = ({ images, selectedImage, setSelectedImage }) => {
   const [shouldAutoScroll, setShouldAutoScroll] = useState(true);
 
   useEffect(() => {
+    // if autoscroll is true begin scrolling through
+    // images every 5 seconds
     const intervalId = setInterval(() => {
       if (shouldAutoScroll) {
         setSelectedImage((selectedImage + images.length + 1) % images.length);
@@ -15,15 +17,21 @@ const CarouselControls = ({ images, selectedImage, setSelectedImage }) => {
   });
 
   const handlePrev = () => {
+    // reset autoscroll to false once user controls image
     setShouldAutoScroll(false);
     setSelectedImage((selectedImage + images.length - 1) % images.length);
+
+    // after 5 seconds of inactivity set autoscroll to true
     setTimeout(() => {
       setShouldAutoScroll(true);
     }, 5000);
   };
   const handleNext = () => {
+    // reset autoscroll to false once user controls image
     setShouldAutoScroll(false);
     setSelectedImage((selectedImage + images.length + 1) % images.length);
+
+    // after 5 seconds of inactivity set autoscroll to true
     setTimeout(() => {
       setShouldAutoScroll(true);
     }, 5000);
@@ -47,6 +55,7 @@ const CarouselControls = ({ images, selectedImage, setSelectedImage }) => {
           </svg>
         </Button>
         <div className="image-indicators">
+          {/* display selected image indicator between nav buttons */}
           {images.map((icon, i) => {
             if (i === selectedImage) {
               return <div key={i} className="image-indicator selected"></div>;

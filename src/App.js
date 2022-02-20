@@ -6,8 +6,8 @@ import { Container } from './components/styles/Container.styled';
 function App() {
   return (
     <CookiesProvider>
+      <Navbar />
       <Container>
-        <Navbar />
         <Carousel />
       </Container>
     </CookiesProvider>

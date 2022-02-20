@@ -12,6 +12,7 @@ const Login = () => {
   let navigate = useNavigate();
 
   useEffect(() => {
+    // redirect to home page if user cookie exists
     if (cookies['user']) {
       return navigate('/');
     }
@@ -19,6 +20,8 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
+
+    // set cookie to username
     setCookie('user', username, { path: '/' });
     setUsername('');
     setPassword('');
@@ -27,17 +30,20 @@ const Login = () => {
   return (
     <Container>
       <StyledForm onSubmit={handleLogin}>
+        <div>Login</div>
         <input
           type="text"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           placeholder="Username"
+          required
         />
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
+          required
         />
         <Button>Login</Button>
       </StyledForm>
