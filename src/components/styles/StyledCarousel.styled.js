@@ -4,9 +4,9 @@ export const StyledCarousel = styled.div`
   background-color: #cfcfcf;
   width: 1150px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 1em auto;
   border-radius: 5px;
-  box-shadow: 8px 5px 5px #064663;
+  box-shadow: 8px 5px 5px #808080;
 
   .images {
     display: flex;

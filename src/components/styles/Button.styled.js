@@ -6,14 +6,14 @@ export const Button = styled.button`
   width: 100px;
   border-radius: 5px;
   border: none;
-  color: #ecb365;
+  color: white;
   display: flex;
   justify-content: center;
   letter-spacing: 1px;
   font-weight: 700;
 
   &:hover {
-    background-color: #ecb365;
+    background-color: #3cbec3;
     color: #064663;
 
     svg {
