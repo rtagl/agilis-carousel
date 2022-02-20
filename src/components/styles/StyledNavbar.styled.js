@@ -5,5 +5,5 @@ export const StyledNavbar = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #977af5;
+  background-color: #ccc;
 `;

@@ -1,44 +1,53 @@
 import styled from 'styled-components';
 
 export const StyledCarousel = styled.div`
-  background-color: #6f88ab;
-  padding: 1.5em;
+  background-color: #041c32;
   width: 1150px;
   max-width: 100%;
   margin: 0 auto;
 
   .images {
     display: flex;
+    padding: 1em;
     justify-content: center;
     align-items: center;
   }
   .card {
-    display: flex;
-    justify-content: center;
-    padding: 0.5em;
-    margin: 0.5rem;
-    object-fill: cover;
+    padding: 1em;
     transition: transform 0.3s;
   }
   .card-1,
   .card-3 {
-    display: flex;
-    align-content: center;
-    max-width: 25%;
-    opacity: 0.6;
-    height: auto;
+    display: none;
   }
   .card-2 {
-    max-width: 30%;
-    height: auto;
+    width: 370px;
+    max-width: 80%;
+    height: 350px;
   }
   img {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    object-fit: cover;
   }
 
   .card:hover {
     transform: scale(1.05);
+  }
+  @media screen and (min-width: 750px) {
+    .card-1,
+    .card-3 {
+      display: flex;
+      align-content: center;
+      width: 300px;
+      max-width: 30%;
+      height: 250px;
+      opacity: 0.55;
+    }
+    .card-2 {
+      width: 320px;
+      max-width: 35%;
+      height: 290px;
+    }
   }
 `;

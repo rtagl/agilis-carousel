@@ -4,10 +4,10 @@ export const CarouselNav = styled.div`
   padding: 1rem;
   display: flex;
   justify-content: center;
-  margin-top: 1em;
 
   .carousel-controls {
-    width: 50%;
+    width: 400px;
+    min-width: 40%;
     display: flex;
     justify-content: space-between;
   }
@@ -20,12 +20,12 @@ export const CarouselNav = styled.div`
   .image-indicator {
     width: 10px;
     height: 10px;
-    background-color: #3b12c4;
+    background-color: #064663;
     border-radius: 50%;
     margin: 0.5em;
   }
 
   .selected {
-    background-color: #f213eb;
+    background-color: #ecb365;
   }
 `;
