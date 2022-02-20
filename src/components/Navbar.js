@@ -1,23 +1,26 @@
 import { Button } from './styles/Button.styled';
 import { StyledNavbar } from './styles/StyledNavbar.styled';
 import { useCookies } from 'react-cookie';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [cookies, setCookie, removeCookie] = useCookies(['user']);
 
-  const handleCookie = () => {
-    if (!cookies['user']) {
-      setCookie('user', 'finney', { path: '/' });
-    } else {
-      removeCookie('user', { path: '/' });
-    }
+  const handleLogout = () => {
+    removeCookie('user', { path: '/' });
   };
 
   return (
     <StyledNavbar>
-      <Button onClick={handleCookie}>
-        {cookies['user'] ? 'Logout' : 'Login'}
-      </Button>
+      {!cookies['user'] ? (
+        <Link to="/login">
+          <Button>Login</Button>
+        </Link>
+      ) : (
+        <Button onClick={handleLogout}>
+          {cookies['user'] ? 'Logout' : 'Login'}
+        </Button>
+      )}
     </StyledNavbar>
   );
 };
