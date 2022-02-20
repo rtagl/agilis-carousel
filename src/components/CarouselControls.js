@@ -16,9 +16,9 @@ const CarouselControls = ({ images, selectedImage, setSelectedImage }) => {
         <div className="image-indicators">
           {images.map((icon, i) => {
             if (i === selectedImage) {
-              return <div class="image-indicator selected"></div>;
+              return <div key={i} className="image-indicator selected"></div>;
             }
-            return <div class="image-indicator"></div>;
+            return <div key={i} className="image-indicator"></div>;
           })}
         </div>
         <Button
