@@ -4,7 +4,7 @@ import { useCookies } from 'react-cookie';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [cookies, removeCookie] = useCookies(['user']);
+  const [cookies, setCookie, removeCookie] = useCookies(['user']);
 
   const handleLogout = () => {
     removeCookie('user', { path: '/' });
