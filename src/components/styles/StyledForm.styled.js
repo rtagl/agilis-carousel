@@ -9,11 +9,10 @@ export const StyledForm = styled.form`
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
-  box-shadow: 8px 5px 5px #064663;
+  box-shadow: 8px 5px 5px #808080;
 
   div {
     font-size: 2rem;
-    font-family: 'Roboto Condensed', sans-serif;
     color: #064663;
     font-weight: 500;
   }

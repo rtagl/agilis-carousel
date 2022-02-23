@@ -11,7 +11,6 @@ const Carousel = () => {
 
   useEffect(() => {
     // set images based on cookie
-    console.log(cookie['user'], '4389483284');
     if (cookie['user']) {
       setImages(loggedInImages);
     } else {

@@ -20,7 +20,7 @@ export const CarouselNav = styled.div`
   .image-indicator {
     width: 10px;
     height: 10px;
-    background-color: #064663;
+    background-color: ${({ theme }) => theme.colors.primary};
     border-radius: 50%;
     margin: 0.4em;
   }
